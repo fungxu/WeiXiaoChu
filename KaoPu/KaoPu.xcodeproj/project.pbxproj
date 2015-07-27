@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3A6FABF1B662FEB00951CF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A6FABE1B662FEB00951CF0 /* Images.xcassets */; };
+		A3A6FACE1B662FEB00951CF0 /* KaoPuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FACD1B662FEB00951CF0 /* KaoPuTests.m */; };
+		A3A6FB241B664A4700951CF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB151B664A4700951CF0 /* AppDelegate.m */; };
+		A3A6FB261B664B5E00951CF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB251B664B5E00951CF0 /* main.m */; };
+		A3A6FB2A1B664CD100951CF0 /* UIBarButtonItem+KPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB291B664CD100951CF0 /* UIBarButtonItem+KPExtension.m */; };
+		A3A6FB2D1B664CF000951CF0 /* UIView+KPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB2C1B664CF000951CF0 /* UIView+KPExtension.m */; };
+		A3A6FB301B664DCC00951CF0 /* KPTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB2F1B664DCC00951CF0 /* KPTabBarViewController.m */; };
+		A3A6FB331B664DE700951CF0 /* KPNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB321B664DE700951CF0 /* KPNavigationViewController.m */; };
+		A3A6FB361B664F4200951CF0 /* KPRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB351B664F4200951CF0 /* KPRecommendViewController.m */; };
+		A3A6FB391B664F5000951CF0 /* KPClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB381B664F5000951CF0 /* KPClassifyViewController.m */; };
+		A3A6FB3C1B664F5E00951CF0 /* KPPrivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB3B1B664F5E00951CF0 /* KPPrivateViewController.m */; };
+		A3A6FB3F1B664F6800951CF0 /* KPMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB3E1B664F6800951CF0 /* KPMineViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3A6FAC81B662FEB00951CF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3A6FAA61B662FEB00951CF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A6FAAD1B662FEB00951CF0;
+			remoteInfo = KaoPu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3A6FAAE1B662FEB00951CF0 /* KaoPu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaoPu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A6FAB21B662FEB00951CF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A6FABE1B662FEB00951CF0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A3A6FAC71B662FEB00951CF0 /* KaoPuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaoPuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A6FACC1B662FEB00951CF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A6FACD1B662FEB00951CF0 /* KaoPuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaoPuTests.m; sourceTree = "<group>"; };
+		A3A6FB141B664A4700951CF0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A3A6FB151B664A4700951CF0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A3A6FB251B664B5E00951CF0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3A6FB271B664C3D00951CF0 /* Main.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Main.pch; sourceTree = "<group>"; };
+		A3A6FB281B664CD100951CF0 /* UIBarButtonItem+KPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+KPExtension.h"; sourceTree = "<group>"; };
+		A3A6FB291B664CD100951CF0 /* UIBarButtonItem+KPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+KPExtension.m"; sourceTree = "<group>"; };
+		A3A6FB2B1B664CF000951CF0 /* UIView+KPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KPExtension.h"; sourceTree = "<group>"; };
+		A3A6FB2C1B664CF000951CF0 /* UIView+KPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KPExtension.m"; sourceTree = "<group>"; };
+		A3A6FB2E1B664DCC00951CF0 /* KPTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPTabBarViewController.h; sourceTree = "<group>"; };
+		A3A6FB2F1B664DCC00951CF0 /* KPTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPTabBarViewController.m; sourceTree = "<group>"; };
+		A3A6FB311B664DE700951CF0 /* KPNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPNavigationViewController.h; sourceTree = "<group>"; };
+		A3A6FB321B664DE700951CF0 /* KPNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPNavigationViewController.m; sourceTree = "<group>"; };
+		A3A6FB341B664F4200951CF0 /* KPRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPRecommendViewController.h; sourceTree = "<group>"; };
+		A3A6FB351B664F4200951CF0 /* KPRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPRecommendViewController.m; sourceTree = "<group>"; };
+		A3A6FB371B664F5000951CF0 /* KPClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPClassifyViewController.h; sourceTree = "<group>"; };
+		A3A6FB381B664F5000951CF0 /* KPClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPClassifyViewController.m; sourceTree = "<group>"; };
+		A3A6FB3A1B664F5E00951CF0 /* KPPrivateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPPrivateViewController.h; sourceTree = "<group>"; };
+		A3A6FB3B1B664F5E00951CF0 /* KPPrivateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPPrivateViewController.m; sourceTree = "<group>"; };
+		A3A6FB3D1B664F6800951CF0 /* KPMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPMineViewController.h; sourceTree = "<group>"; };
+		A3A6FB3E1B664F6800951CF0 /* KPMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPMineViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3A6FAAB1B662FEB00951CF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A6FAC41B662FEB00951CF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3A6FAA51B662FEB00951CF0 = {
+			isa = PBXGroup;
+			children = (
+				A3A6FAB01B662FEB00951CF0 /* KaoPu */,
+				A3A6FACA1B662FEB00951CF0 /* KaoPuTests */,
+				A3A6FAAF1B662FEB00951CF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3A6FAAF1B662FEB00951CF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FAAE1B662FEB00951CF0 /* KaoPu.app */,
+				A3A6FAC71B662FEB00951CF0 /* KaoPuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3A6FAB01B662FEB00951CF0 /* KaoPu */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FB091B664A4700951CF0 /* Class */,
+				A3A6FAB11B662FEB00951CF0 /* Supporting Files */,
+			);
+			path = KaoPu;
+			sourceTree = "<group>";
+		};
+		A3A6FAB11B662FEB00951CF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FABE1B662FEB00951CF0 /* Images.xcassets */,
+				A3A6FAB21B662FEB00951CF0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3A6FACA1B662FEB00951CF0 /* KaoPuTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FACD1B662FEB00951CF0 /* KaoPuTests.m */,
+				A3A6FACB1B662FEB00951CF0 /* Supporting Files */,
+			);
+			path = KaoPuTests;
+			sourceTree = "<group>";
+		};
+		A3A6FACB1B662FEB00951CF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FACC1B662FEB00951CF0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3A6FB091B664A4700951CF0 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FB0E1B664A4700951CF0 /* Main（主要） */,
+				A3A6FB1F1B664A4700951CF0 /* Recommend（推荐） */,
+				A3A6FB0A1B664A4700951CF0 /* Classify（分类） */,
+				A3A6FB1B1B664A4700951CF0 /* Private（私人） */,
+				A3A6FB171B664A4700951CF0 /* Mine（我） */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		A3A6FB0A1B664A4700951CF0 /* Classify（分类） */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FB0B1B664A4700951CF0 /* controller */,
+				A3A6FB0C1B664A4700951CF0 /* model */,
+				A3A6FB0D1B664A4700951CF0 /* view */,
+			);
+			path = "Classify（分类）";
+			sourceTree = "<group>";
+		};
+		A3A6FB0B1B664A4700951CF0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FB371B664F5000951CF0 /* KPClassifyViewController.h */,
+				A3A6FB381B664F5000951CF0 /* KPClassifyViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		A3A6FB0C1B664A4700951CF0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A3A6FB0D1B664A4700951CF0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A3A6FB0E1B664A4700951CF0 /* Main（主要） */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FB0F1B664A4700951CF0 /* category */,
+				A3A6FB101B664A4700951CF0 /* controller */,
+				A3A6FB121B664A4700951CF0 /* model */,
+				A3A6FB131B664A4700951CF0 /* other */,
+				A3A6FB161B664A4700951CF0 /* view */,
+			);
+			path = "Main（主要）";
+			sourceTree = "<group>";
+		};
+		A3A6FB0F1B664A4700951CF0 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FB2B1B664CF000951CF0 /* UIView+KPExtension.h */,
+				A3A6FB2C1B664CF000951CF0 /* UIView+KPExtension.m */,
+				A3A6FB281B664CD100951CF0 /* UIBarButtonItem+KPExtension.h */,
+				A3A6FB291B664CD100951CF0 /* UIBarButtonItem+KPExtension.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		A3A6FB101B664A4700951CF0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FB2E1B664DCC00951CF0 /* KPTabBarViewController.h */,
+				A3A6FB2F1B664DCC00951CF0 /* KPTabBarViewController.m */,
+				A3A6FB311B664DE700951CF0 /* KPNavigationViewController.h */,
+				A3A6FB321B664DE700951CF0 /* KPNavigationViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		A3A6FB121B664A4700951CF0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A3A6FB131B664A4700951CF0 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FB251B664B5E00951CF0 /* main.m */,
+				A3A6FB141B664A4700951CF0 /* AppDelegate.h */,
+				A3A6FB151B664A4700951CF0 /* AppDelegate.m */,
+				A3A6FB271B664C3D00951CF0 /* Main.pch */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		A3A6FB161B664A4700951CF0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A3A6FB171B664A4700951CF0 /* Mine（我） */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FB181B664A4700951CF0 /* controller */,
+				A3A6FB191B664A4700951CF0 /* model */,
+				A3A6FB1A1B664A4700951CF0 /* view */,
+			);
+			path = "Mine（我）";
+			sourceTree = "<group>";
+		};
+		A3A6FB181B664A4700951CF0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FB3D1B664F6800951CF0 /* KPMineViewController.h */,
+				A3A6FB3E1B664F6800951CF0 /* KPMineViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		A3A6FB191B664A4700951CF0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A3A6FB1A1B664A4700951CF0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A3A6FB1B1B664A4700951CF0 /* Private（私人） */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FB1C1B664A4700951CF0 /* controller */,
+				A3A6FB1D1B664A4700951CF0 /* model */,
+				A3A6FB1E1B664A4700951CF0 /* view */,
+			);
+			path = "Private（私人）";
+			sourceTree = "<group>";
+		};
+		A3A6FB1C1B664A4700951CF0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FB3A1B664F5E00951CF0 /* KPPrivateViewController.h */,
+				A3A6FB3B1B664F5E00951CF0 /* KPPrivateViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		A3A6FB1D1B664A4700951CF0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A3A6FB1E1B664A4700951CF0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A3A6FB1F1B664A4700951CF0 /* Recommend（推荐） */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FB201B664A4700951CF0 /* controller */,
+				A3A6FB211B664A4700951CF0 /* model */,
+				A3A6FB221B664A4700951CF0 /* view */,
+			);
+			path = "Recommend（推荐）";
+			sourceTree = "<group>";
+		};
+		A3A6FB201B664A4700951CF0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3A6FB341B664F4200951CF0 /* KPRecommendViewController.h */,
+				A3A6FB351B664F4200951CF0 /* KPRecommendViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		A3A6FB211B664A4700951CF0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A3A6FB221B664A4700951CF0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3A6FAAD1B662FEB00951CF0 /* KaoPu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A6FAD11B662FEB00951CF0 /* Build configuration list for PBXNativeTarget "KaoPu" */;
+			buildPhases = (
+				A3A6FAAA1B662FEB00951CF0 /* Sources */,
+				A3A6FAAB1B662FEB00951CF0 /* Frameworks */,
+				A3A6FAAC1B662FEB00951CF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KaoPu;
+			productName = KaoPu;
+			productReference = A3A6FAAE1B662FEB00951CF0 /* KaoPu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3A6FAC61B662FEB00951CF0 /* KaoPuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A6FAD41B662FEB00951CF0 /* Build configuration list for PBXNativeTarget "KaoPuTests" */;
+			buildPhases = (
+				A3A6FAC31B662FEB00951CF0 /* Sources */,
+				A3A6FAC41B662FEB00951CF0 /* Frameworks */,
+				A3A6FAC51B662FEB00951CF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3A6FAC91B662FEB00951CF0 /* PBXTargetDependency */,
+			);
+			name = KaoPuTests;
+			productName = KaoPuTests;
+			productReference = A3A6FAC71B662FEB00951CF0 /* KaoPuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3A6FAA61B662FEB00951CF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KP;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = zuo;
+				TargetAttributes = {
+					A3A6FAAD1B662FEB00951CF0 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					A3A6FAC61B662FEB00951CF0 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = A3A6FAAD1B662FEB00951CF0;
+					};
+				};
+			};
+			buildConfigurationList = A3A6FAA91B662FEB00951CF0 /* Build configuration list for PBXProject "KaoPu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3A6FAA51B662FEB00951CF0;
+			productRefGroup = A3A6FAAF1B662FEB00951CF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3A6FAAD1B662FEB00951CF0 /* KaoPu */,
+				A3A6FAC61B662FEB00951CF0 /* KaoPuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3A6FAAC1B662FEB00951CF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A6FABF1B662FEB00951CF0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A6FAC51B662FEB00951CF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3A6FAAA1B662FEB00951CF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A6FB301B664DCC00951CF0 /* KPTabBarViewController.m in Sources */,
+				A3A6FB261B664B5E00951CF0 /* main.m in Sources */,
+				A3A6FB2D1B664CF000951CF0 /* UIView+KPExtension.m in Sources */,
+				A3A6FB331B664DE700951CF0 /* KPNavigationViewController.m in Sources */,
+				A3A6FB361B664F4200951CF0 /* KPRecommendViewController.m in Sources */,
+				A3A6FB3C1B664F5E00951CF0 /* KPPrivateViewController.m in Sources */,
+				A3A6FB3F1B664F6800951CF0 /* KPMineViewController.m in Sources */,
+				A3A6FB391B664F5000951CF0 /* KPClassifyViewController.m in Sources */,
+				A3A6FB241B664A4700951CF0 /* AppDelegate.m in Sources */,
+				A3A6FB2A1B664CD100951CF0 /* UIBarButtonItem+KPExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A6FAC31B662FEB00951CF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A6FACE1B662FEB00951CF0 /* KaoPuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3A6FAC91B662FEB00951CF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3A6FAAD1B662FEB00951CF0 /* KaoPu */;
+			targetProxy = A3A6FAC81B662FEB00951CF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A3A6FACF1B662FEB00951CF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A3A6FAD01B662FEB00951CF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3A6FAD21B662FEB00951CF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KaoPu/Class/Main（主要）/other/Main.pch";
+				INFOPLIST_FILE = KaoPu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3A6FAD31B662FEB00951CF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KaoPu/Class/Main（主要）/other/Main.pch";
+				INFOPLIST_FILE = KaoPu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A3A6FAD51B662FEB00951CF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KaoPuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KaoPu.app/KaoPu";
+			};
+			name = Debug;
+		};
+		A3A6FAD61B662FEB00951CF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KaoPuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KaoPu.app/KaoPu";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3A6FAA91B662FEB00951CF0 /* Build configuration list for PBXProject "KaoPu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A6FACF1B662FEB00951CF0 /* Debug */,
+				A3A6FAD01B662FEB00951CF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A6FAD11B662FEB00951CF0 /* Build configuration list for PBXNativeTarget "KaoPu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A6FAD21B662FEB00951CF0 /* Debug */,
+				A3A6FAD31B662FEB00951CF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A6FAD41B662FEB00951CF0 /* Build configuration list for PBXNativeTarget "KaoPuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A6FAD51B662FEB00951CF0 /* Debug */,
+				A3A6FAD61B662FEB00951CF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3A6FAA61B662FEB00951CF0 /* Project object */;
+}
