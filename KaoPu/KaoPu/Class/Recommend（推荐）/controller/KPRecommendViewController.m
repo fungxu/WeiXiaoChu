@@ -19,6 +19,8 @@
     
     // 1.设置Nav标题和按钮
     [self setupNav];
+    
+    NSLog(@"%s", __func__);
 }
 
 #pragma mark - 1.设置Nav标题和按钮
