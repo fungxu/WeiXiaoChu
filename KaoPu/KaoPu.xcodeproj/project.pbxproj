@@ -14,6 +14,9 @@
 		A3437FFC1B67725A0072C064 /* KPShowViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3437FFA1B67725A0072C064 /* KPShowViewCell.xib */; };
 		A3437FFF1B67741C0072C064 /* KPDish.m in Sources */ = {isa = PBXBuildFile; fileRef = A3437FFE1B67741C0072C064 /* KPDish.m */; };
 		A34380051B6775F40072C064 /* KPDishStep.m in Sources */ = {isa = PBXBuildFile; fileRef = A34380041B6775F40072C064 /* KPDishStep.m */; };
+		A35FAE561B677A3D00321B82 /* KPClassify.m in Sources */ = {isa = PBXBuildFile; fileRef = A35FAE511B677A3D00321B82 /* KPClassify.m */; };
+		A35FAE571B677A3D00321B82 /* KPClassifyViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A35FAE541B677A3D00321B82 /* KPClassifyViewCell.m */; };
+		A35FAE581B677A3D00321B82 /* KPClassifyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A35FAE551B677A3D00321B82 /* KPClassifyViewCell.xib */; };
 		A3A6FABF1B662FEB00951CF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A6FABE1B662FEB00951CF0 /* Images.xcassets */; };
 		A3A6FACE1B662FEB00951CF0 /* KaoPuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FACD1B662FEB00951CF0 /* KaoPuTests.m */; };
 		A3A6FB241B664A4700951CF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB151B664A4700951CF0 /* AppDelegate.m */; };
@@ -26,7 +29,6 @@
 		A3A6FB391B664F5000951CF0 /* KPClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB381B664F5000951CF0 /* KPClassifyViewController.m */; };
 		A3A6FB3C1B664F5E00951CF0 /* KPPrivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB3B1B664F5E00951CF0 /* KPPrivateViewController.m */; };
 		A3A6FB3F1B664F6800951CF0 /* KPMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB3E1B664F6800951CF0 /* KPMineViewController.m */; };
-		B7587C9E2664D42413807B90 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9788E821B148A8A3B19AA29C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,11 @@
 		A3437FFE1B67741C0072C064 /* KPDish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDish.m; sourceTree = "<group>"; };
 		A34380031B6775F40072C064 /* KPDishStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPDishStep.h; sourceTree = "<group>"; };
 		A34380041B6775F40072C064 /* KPDishStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDishStep.m; sourceTree = "<group>"; };
+		A35FAE501B677A3D00321B82 /* KPClassify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPClassify.h; sourceTree = "<group>"; };
+		A35FAE511B677A3D00321B82 /* KPClassify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPClassify.m; sourceTree = "<group>"; };
+		A35FAE531B677A3D00321B82 /* KPClassifyViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPClassifyViewCell.h; sourceTree = "<group>"; };
+		A35FAE541B677A3D00321B82 /* KPClassifyViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPClassifyViewCell.m; sourceTree = "<group>"; };
+		A35FAE551B677A3D00321B82 /* KPClassifyViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPClassifyViewCell.xib; sourceTree = "<group>"; };
 		A3A6FAAE1B662FEB00951CF0 /* KaoPu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaoPu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A6FAB21B662FEB00951CF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3A6FABE1B662FEB00951CF0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -109,6 +116,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A35FAE4F1B677A3D00321B82 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A35FAE501B677A3D00321B82 /* KPClassify.h */,
+				A35FAE511B677A3D00321B82 /* KPClassify.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A35FAE521B677A3D00321B82 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A35FAE531B677A3D00321B82 /* KPClassifyViewCell.h */,
+				A35FAE541B677A3D00321B82 /* KPClassifyViewCell.m */,
+				A35FAE551B677A3D00321B82 /* KPClassifyViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		A3A6FAA51B662FEB00951CF0 = {
 			isa = PBXGroup;
 			children = (
@@ -142,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				A3A6FABE1B662FEB00951CF0 /* Images.xcassets */,
-				1C440EBE1B67639B00FEBE1B /* classifies.plist */,
 				A3A6FAB21B662FEB00951CF0 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -180,8 +205,8 @@
 		A3A6FB0A1B664A4700951CF0 /* Classify（分类） */ = {
 			isa = PBXGroup;
 			children = (
-				1C440EC31B67654900FEBE1B /* Model */,
-				1C440EC41B67654900FEBE1B /* View */,
+				A35FAE4F1B677A3D00321B82 /* model */,
+				A35FAE521B677A3D00321B82 /* view */,
 				A3A6FB0B1B664A4700951CF0 /* controller */,
 			);
 			path = "Classify（分类）";
@@ -458,7 +483,7 @@
 				A3437FFC1B67725A0072C064 /* KPShowViewCell.xib in Resources */,
 				A3437FF71B6764150072C064 /* KPShowViewController.xib in Resources */,
 				A3A6FABF1B662FEB00951CF0 /* Images.xcassets in Resources */,
-				1C440ECC1B6769A300FEBE1B /* KPClassifyViewCell.xib in Resources */,
+				A35FAE581B677A3D00321B82 /* KPClassifyViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +537,7 @@
 				A3A6FB301B664DCC00951CF0 /* KPTabBarViewController.m in Sources */,
 				A3A6FB261B664B5E00951CF0 /* main.m in Sources */,
 				A3A6FB2D1B664CF000951CF0 /* UIView+KPExtension.m in Sources */,
+				A35FAE571B677A3D00321B82 /* KPClassifyViewCell.m in Sources */,
 				A3A6FB331B664DE700951CF0 /* KPNavigationViewController.m in Sources */,
 				A34380051B6775F40072C064 /* KPDishStep.m in Sources */,
 				A3A6FB361B664F4200951CF0 /* KPRecommendViewController.m in Sources */,
@@ -519,9 +545,8 @@
 				A3437FFB1B67725A0072C064 /* KPShowViewCell.m in Sources */,
 				A3437FFF1B67741C0072C064 /* KPDish.m in Sources */,
 				A3A6FB3F1B664F6800951CF0 /* KPMineViewController.m in Sources */,
-				1C440ECB1B6769A300FEBE1B /* KPClassifyViewCell.m in Sources */,
-				1C440EC71B67655B00FEBE1B /* KPClassify.m in Sources */,
 				A3A6FB391B664F5000951CF0 /* KPClassifyViewController.m in Sources */,
+				A35FAE561B677A3D00321B82 /* KPClassify.m in Sources */,
 				A3A6FB241B664A4700951CF0 /* AppDelegate.m in Sources */,
 				A3437FF61B6764150072C064 /* KPShowViewController.m in Sources */,
 				A3A6FB2A1B664CD100951CF0 /* UIBarButtonItem+KPExtension.m in Sources */,
