@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33F98C551E1A007C785ED64C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB81972E37184A6028FA072 /* libPods.a */; };
+		A3437FF61B6764150072C064 /* KPShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3437FF41B6764150072C064 /* KPShowViewController.m */; };
+		A3437FF71B6764150072C064 /* KPShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3437FF51B6764150072C064 /* KPShowViewController.xib */; };
+		A3437FFB1B67725A0072C064 /* KPShowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3437FF91B67725A0072C064 /* KPShowViewCell.m */; };
+		A3437FFC1B67725A0072C064 /* KPShowViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3437FFA1B67725A0072C064 /* KPShowViewCell.xib */; };
+		A3437FFF1B67741C0072C064 /* KPDish.m in Sources */ = {isa = PBXBuildFile; fileRef = A3437FFE1B67741C0072C064 /* KPDish.m */; };
+		A34380051B6775F40072C064 /* KPDishStep.m in Sources */ = {isa = PBXBuildFile; fileRef = A34380041B6775F40072C064 /* KPDishStep.m */; };
 		A3A6FABF1B662FEB00951CF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A6FABE1B662FEB00951CF0 /* Images.xcassets */; };
 		A3A6FACE1B662FEB00951CF0 /* KaoPuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FACD1B662FEB00951CF0 /* KaoPuTests.m */; };
 		A3A6FB241B664A4700951CF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB151B664A4700951CF0 /* AppDelegate.m */; };
@@ -32,6 +39,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		594A566172F14F36271247F9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		894FFD012BBCE6213DD58165 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8FB81972E37184A6028FA072 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3437FF31B6764150072C064 /* KPShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPShowViewController.h; sourceTree = "<group>"; };
+		A3437FF41B6764150072C064 /* KPShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPShowViewController.m; sourceTree = "<group>"; };
+		A3437FF51B6764150072C064 /* KPShowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPShowViewController.xib; sourceTree = "<group>"; };
+		A3437FF81B67725A0072C064 /* KPShowViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPShowViewCell.h; sourceTree = "<group>"; };
+		A3437FF91B67725A0072C064 /* KPShowViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPShowViewCell.m; sourceTree = "<group>"; };
+		A3437FFA1B67725A0072C064 /* KPShowViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPShowViewCell.xib; sourceTree = "<group>"; };
+		A3437FFD1B67741C0072C064 /* KPDish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPDish.h; sourceTree = "<group>"; };
+		A3437FFE1B67741C0072C064 /* KPDish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDish.m; sourceTree = "<group>"; };
+		A34380031B6775F40072C064 /* KPDishStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPDishStep.h; sourceTree = "<group>"; };
+		A34380041B6775F40072C064 /* KPDishStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDishStep.m; sourceTree = "<group>"; };
 		A3A6FAAE1B662FEB00951CF0 /* KaoPu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaoPu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A6FAB21B662FEB00951CF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3A6FABE1B662FEB00951CF0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -65,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F98C551E1A007C785ED64C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +99,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7483DCCFC20C4831F25F0650 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				894FFD012BBCE6213DD58165 /* Pods.debug.xcconfig */,
+				594A566172F14F36271247F9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A3A6FAA51B662FEB00951CF0 = {
 			isa = PBXGroup;
 			children = (
 				A3A6FAB01B662FEB00951CF0 /* KaoPu */,
 				A3A6FACA1B662FEB00951CF0 /* KaoPuTests */,
 				A3A6FAAF1B662FEB00951CF0 /* Products */,
+				7483DCCFC20C4831F25F0650 /* Pods */,
+				BDF3639172536948AAC898BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -316,6 +348,9 @@
 			children = (
 				A3A6FB341B664F4200951CF0 /* KPRecommendViewController.h */,
 				A3A6FB351B664F4200951CF0 /* KPRecommendViewController.m */,
+				A3437FF31B6764150072C064 /* KPShowViewController.h */,
+				A3437FF41B6764150072C064 /* KPShowViewController.m */,
+				A3437FF51B6764150072C064 /* KPShowViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -323,6 +358,10 @@
 		A3A6FB211B664A4700951CF0 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				A3437FFD1B67741C0072C064 /* KPDish.h */,
+				A3437FFE1B67741C0072C064 /* KPDish.m */,
+				A34380031B6775F40072C064 /* KPDishStep.h */,
+				A34380041B6775F40072C064 /* KPDishStep.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -330,8 +369,19 @@
 		A3A6FB221B664A4700951CF0 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				A3437FF81B67725A0072C064 /* KPShowViewCell.h */,
+				A3437FF91B67725A0072C064 /* KPShowViewCell.m */,
+				A3437FFA1B67725A0072C064 /* KPShowViewCell.xib */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		BDF3639172536948AAC898BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FB81972E37184A6028FA072 /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,9 +391,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3A6FAD11B662FEB00951CF0 /* Build configuration list for PBXNativeTarget "KaoPu" */;
 			buildPhases = (
+				548F0CEA4DF53142AFB1D3A0 /* Check Pods Manifest.lock */,
 				A3A6FAAA1B662FEB00951CF0 /* Sources */,
 				A3A6FAAB1B662FEB00951CF0 /* Frameworks */,
 				A3A6FAAC1B662FEB00951CF0 /* Resources */,
+				90ABA092748EBF6FDAEF3658 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -415,6 +467,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3437FFC1B67725A0072C064 /* KPShowViewCell.xib in Resources */,
+				A3437FF71B6764150072C064 /* KPShowViewController.xib in Resources */,
 				A3A6FABF1B662FEB00951CF0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +482,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		548F0CEA4DF53142AFB1D3A0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90ABA092748EBF6FDAEF3658 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A3A6FAAA1B662FEB00951CF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -437,11 +524,15 @@
 				A3A6FB261B664B5E00951CF0 /* main.m in Sources */,
 				A3A6FB2D1B664CF000951CF0 /* UIView+KPExtension.m in Sources */,
 				A3A6FB331B664DE700951CF0 /* KPNavigationViewController.m in Sources */,
+				A34380051B6775F40072C064 /* KPDishStep.m in Sources */,
 				A3A6FB361B664F4200951CF0 /* KPRecommendViewController.m in Sources */,
 				A3A6FB3C1B664F5E00951CF0 /* KPPrivateViewController.m in Sources */,
+				A3437FFB1B67725A0072C064 /* KPShowViewCell.m in Sources */,
+				A3437FFF1B67741C0072C064 /* KPDish.m in Sources */,
 				A3A6FB3F1B664F6800951CF0 /* KPMineViewController.m in Sources */,
 				A3A6FB391B664F5000951CF0 /* KPClassifyViewController.m in Sources */,
 				A3A6FB241B664A4700951CF0 /* AppDelegate.m in Sources */,
+				A3437FF61B6764150072C064 /* KPShowViewController.m in Sources */,
 				A3A6FB2A1B664CD100951CF0 /* UIBarButtonItem+KPExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,6 +638,7 @@
 		};
 		A3A6FAD21B662FEB00951CF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 894FFD012BBCE6213DD58165 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -560,6 +652,7 @@
 		};
 		A3A6FAD31B662FEB00951CF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 594A566172F14F36271247F9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
