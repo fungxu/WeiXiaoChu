@@ -12,6 +12,7 @@
 #import "KPDish.h"
 #import "KPDishStep.h"
 #import "MJExtension.h"
+#import <SVProgressHUD.h>
 
 @interface KPShowViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *contentCollectionView;
@@ -109,6 +110,7 @@ static NSString *const KPCollectionViewCellIdentifier = @"cell";
 #pragma mark - 3.获得菜品数据
 - (void)getDishInfo
 {
+    [SVProgressHUD showWithStatus:@"加载中"];
     /**
      *  接口地址：http://apis.juhe.cn/cook/index
      支持格式：JSON/XML
@@ -134,11 +136,11 @@ static NSString *const KPCollectionViewCellIdentifier = @"cell";
     [mgr GET:@"http://apis.juhe.cn/cook/index" parameters:param success:^(NSURLSessionDataTask *task, id responseObject) {
         
         self.dishes = [KPDish objectArrayWithKeyValuesArray:responseObject[@"result"][@"data"]];
-        NSLog(@"%@", responseObject);
         
-        
+        [self.contentCollectionView reloadData];
+        [SVProgressHUD dismiss];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"%s", __func__);
+        [SVProgressHUD showErrorWithStatus:@"加载失败"];
     }];
 }
 
@@ -146,16 +148,22 @@ static NSString *const KPCollectionViewCellIdentifier = @"cell";
 #pragma mark - 数据源方法
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 10;
+    return self.dishes.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     KPShowViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:KPCollectionViewCellIdentifier forIndexPath:indexPath];
     
-    cell.backgroundColor = KPRandomColor;
+    cell.dish = self.dishes[indexPath.item];
     
     return cell;
+}
+
+#pragma mark - 代理方法
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%s", __func__);
 }
 
 @end
