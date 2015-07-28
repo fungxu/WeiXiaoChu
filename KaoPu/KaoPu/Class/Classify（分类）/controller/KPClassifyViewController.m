@@ -7,18 +7,67 @@
 //
 
 #import "KPClassifyViewController.h"
+#import "KPClassify.h"
+#import "KPClassifyViewCell.h"
+#import "MJExtension.h"
 
 @interface KPClassifyViewController ()
+
+/** classifies */
+@property (strong, nonatomic) NSArray *classifies;
 
 @end
 
 @implementation KPClassifyViewController
 
+
+- (instancetype)init
+{
+    //流水布局对象
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    //设置item尺寸
+   layout.itemSize = CGSizeMake(100, 120);
+    //设置每个item之间的间距
+    //layout.minimumInteritemSpacing = 0;
+    //设置行距
+    layout.minimumLineSpacing = 10;
+ 
+    return [super initWithCollectionViewLayout:layout];
+}
+
+
+static NSString * const reuseIdentifier = @"Cell";
+
+- (NSArray *)classifies {
+    
+    if (_classifies == nil) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"classifies.plist" ofType:nil];
+        NSArray *array = [NSArray arrayWithContentsOfFile:path];
+        
+        _classifies = [KPClassify objectArrayWithKeyValuesArray:array];
+        
+    }
+    
+    return _classifies;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+ 
     // 1.设置Nav标题和按钮
     [self setupNav];
+    
+    self.collectionView.backgroundColor = [UIColor cyanColor];
+    
+    
+    self.collectionView.bounces = NO;
+    self.collectionView.showsVerticalScrollIndicator = NO;
+
+   
+    //注册cell
+    [self.collectionView registerNib:[UINib nibWithNibName:@"KPClassifyViewCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
+     
+     
 }
 
 #pragma mark - 1.设置Nav标题和按钮
@@ -31,6 +80,35 @@
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem RightItemWithTarget:self action:@selector(more) image:@"01-更多图标" highlightedimage:@"未标题-3_05"];
 }
+
+
+
+
+#pragma mark - datasource method
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.classifies.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    KPClassifyViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    
+    KPClassify *classify = self.classifies[indexPath.row];
+    
+    cell.classify = classify;
+    
+    return cell;
+}
+
+
+
+
 - (void)back
 {
     NSLog(@"%s", __func__);

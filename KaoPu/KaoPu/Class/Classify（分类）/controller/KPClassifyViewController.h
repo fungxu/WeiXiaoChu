@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KPClassifyViewController : UIViewController
+@interface KPClassifyViewController : UICollectionViewController
 
 @end
