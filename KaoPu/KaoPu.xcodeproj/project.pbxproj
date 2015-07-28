@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C440EBF1B67639B00FEBE1B /* classifies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C440EBE1B67639B00FEBE1B /* classifies.plist */; };
+		1C440EC71B67655B00FEBE1B /* KPClassify.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C440EC61B67655B00FEBE1B /* KPClassify.m */; };
+		1C440ECB1B6769A300FEBE1B /* KPClassifyViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C440EC91B6769A300FEBE1B /* KPClassifyViewCell.m */; };
+		1C440ECC1B6769A300FEBE1B /* KPClassifyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C440ECA1B6769A300FEBE1B /* KPClassifyViewCell.xib */; };
 		A3A6FABF1B662FEB00951CF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A6FABE1B662FEB00951CF0 /* Images.xcassets */; };
 		A3A6FACE1B662FEB00951CF0 /* KaoPuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FACD1B662FEB00951CF0 /* KaoPuTests.m */; };
 		A3A6FB241B664A4700951CF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB151B664A4700951CF0 /* AppDelegate.m */; };
@@ -19,6 +23,7 @@
 		A3A6FB391B664F5000951CF0 /* KPClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB381B664F5000951CF0 /* KPClassifyViewController.m */; };
 		A3A6FB3C1B664F5E00951CF0 /* KPPrivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB3B1B664F5E00951CF0 /* KPPrivateViewController.m */; };
 		A3A6FB3F1B664F6800951CF0 /* KPMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB3E1B664F6800951CF0 /* KPMineViewController.m */; };
+		B7587C9E2664D42413807B90 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9788E821B148A8A3B19AA29C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C440EBE1B67639B00FEBE1B /* classifies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = classifies.plist; sourceTree = "<group>"; };
+		1C440EC51B67655B00FEBE1B /* KPClassify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPClassify.h; sourceTree = "<group>"; };
+		1C440EC61B67655B00FEBE1B /* KPClassify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPClassify.m; sourceTree = "<group>"; };
+		1C440EC81B6769A300FEBE1B /* KPClassifyViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPClassifyViewCell.h; sourceTree = "<group>"; };
+		1C440EC91B6769A300FEBE1B /* KPClassifyViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPClassifyViewCell.m; sourceTree = "<group>"; };
+		1C440ECA1B6769A300FEBE1B /* KPClassifyViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPClassifyViewCell.xib; sourceTree = "<group>"; };
+		203A1091F656A9E2795D0F09 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3F710A787078C795A4767320 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9788E821B148A8A3B19AA29C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A6FAAE1B662FEB00951CF0 /* KaoPu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaoPu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A6FAB21B662FEB00951CF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3A6FABE1B662FEB00951CF0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -65,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7587C9E2664D42413807B90 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +93,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C440EC31B67654900FEBE1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C440EC51B67655B00FEBE1B /* KPClassify.h */,
+				1C440EC61B67655B00FEBE1B /* KPClassify.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C440EC41B67654900FEBE1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C440EC81B6769A300FEBE1B /* KPClassifyViewCell.h */,
+				1C440EC91B6769A300FEBE1B /* KPClassifyViewCell.m */,
+				1C440ECA1B6769A300FEBE1B /* KPClassifyViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C54117673ABF6863E66B352 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9788E821B148A8A3B19AA29C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66E71F4A2E4E4BE5F78E21D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				203A1091F656A9E2795D0F09 /* Pods.debug.xcconfig */,
+				3F710A787078C795A4767320 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A3A6FAA51B662FEB00951CF0 = {
 			isa = PBXGroup;
 			children = (
 				A3A6FAB01B662FEB00951CF0 /* KaoPu */,
 				A3A6FACA1B662FEB00951CF0 /* KaoPuTests */,
 				A3A6FAAF1B662FEB00951CF0 /* Products */,
+				66E71F4A2E4E4BE5F78E21D7 /* Pods */,
+				2C54117673ABF6863E66B352 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				A3A6FABE1B662FEB00951CF0 /* Images.xcassets */,
+				1C440EBE1B67639B00FEBE1B /* classifies.plist */,
 				A3A6FAB21B662FEB00951CF0 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -146,9 +200,9 @@
 		A3A6FB0A1B664A4700951CF0 /* Classify（分类） */ = {
 			isa = PBXGroup;
 			children = (
+				1C440EC31B67654900FEBE1B /* Model */,
+				1C440EC41B67654900FEBE1B /* View */,
 				A3A6FB0B1B664A4700951CF0 /* controller */,
-				A3A6FB0C1B664A4700951CF0 /* model */,
-				A3A6FB0D1B664A4700951CF0 /* view */,
 			);
 			path = "Classify（分类）";
 			sourceTree = "<group>";
@@ -160,20 +214,6 @@
 				A3A6FB381B664F5000951CF0 /* KPClassifyViewController.m */,
 			);
 			path = controller;
-			sourceTree = "<group>";
-		};
-		A3A6FB0C1B664A4700951CF0 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		A3A6FB0D1B664A4700951CF0 /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
 			sourceTree = "<group>";
 		};
 		A3A6FB0E1B664A4700951CF0 /* Main（主要） */ = {
@@ -341,9 +381,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3A6FAD11B662FEB00951CF0 /* Build configuration list for PBXNativeTarget "KaoPu" */;
 			buildPhases = (
+				FF801DDF84FBC9C748D6872F /* Check Pods Manifest.lock */,
 				A3A6FAAA1B662FEB00951CF0 /* Sources */,
 				A3A6FAAB1B662FEB00951CF0 /* Frameworks */,
 				A3A6FAAC1B662FEB00951CF0 /* Resources */,
+				EE7A35C38DA8D8BD30D008D0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -415,7 +457,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C440EBF1B67639B00FEBE1B /* classifies.plist in Resources */,
 				A3A6FABF1B662FEB00951CF0 /* Images.xcassets in Resources */,
+				1C440ECC1B6769A300FEBE1B /* KPClassifyViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +471,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE7A35C38DA8D8BD30D008D0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF801DDF84FBC9C748D6872F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3A6FAAA1B662FEB00951CF0 /* Sources */ = {
@@ -440,6 +517,8 @@
 				A3A6FB361B664F4200951CF0 /* KPRecommendViewController.m in Sources */,
 				A3A6FB3C1B664F5E00951CF0 /* KPPrivateViewController.m in Sources */,
 				A3A6FB3F1B664F6800951CF0 /* KPMineViewController.m in Sources */,
+				1C440ECB1B6769A300FEBE1B /* KPClassifyViewCell.m in Sources */,
+				1C440EC71B67655B00FEBE1B /* KPClassify.m in Sources */,
 				A3A6FB391B664F5000951CF0 /* KPClassifyViewController.m in Sources */,
 				A3A6FB241B664A4700951CF0 /* AppDelegate.m in Sources */,
 				A3A6FB2A1B664CD100951CF0 /* UIBarButtonItem+KPExtension.m in Sources */,
@@ -547,6 +626,7 @@
 		};
 		A3A6FAD21B662FEB00951CF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 203A1091F656A9E2795D0F09 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -560,6 +640,7 @@
 		};
 		A3A6FAD31B662FEB00951CF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F710A787078C795A4767320 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
