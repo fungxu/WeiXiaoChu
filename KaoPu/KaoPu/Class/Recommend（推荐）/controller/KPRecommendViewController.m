@@ -49,6 +49,7 @@
 - (void)addContentView
 {
     UIScrollView *ContentView = [[UIScrollView alloc] init];
+    ContentView.showsVerticalScrollIndicator = NO;
     ContentView.backgroundColor = KPColor(228, 228, 228);
     ContentView.frame = self.view.bounds;
     
