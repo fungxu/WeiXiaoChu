@@ -23,8 +23,6 @@
 //    self.imageView.image = image;
 //}
 - (IBAction)delfood:(id)sender {
-    //移除当前控件
-//    [self removeFromSuperview];
     
     //通知外界  重新更新布局
     if ([self.delegate respondsToSelector:@selector(kpCustomFoodDidRemoveFromSuperview:)]) {
