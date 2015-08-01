@@ -10,4 +10,7 @@
 
 @interface KPDetailClassifyViewController : UITableViewController
 
+/** 菜谱名 */
+@property (copy, nonatomic) NSString *classify;
+
 @end

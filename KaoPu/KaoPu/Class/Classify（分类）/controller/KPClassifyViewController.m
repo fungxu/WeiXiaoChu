@@ -11,6 +11,7 @@
 #import "KPClassifyViewCell.h"
 #import "MJExtension.h"
 #import "KPDetailClassifyViewController.h"
+#import "AFNetworking.h"
 
 @interface KPClassifyViewController ()
 
@@ -50,6 +51,19 @@ static NSString * const reuseIdentifier = @"Cell";
     }
     
     return _classifies;
+}
+
+
+- (void)loadClassifyData {
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"key"] = @"fb26de051cf1b25a7f0e2b3e9d542ff8";
+    
+    [[AFHTTPSessionManager manager] GET:@"http://apis.juhe.cn/cook/category" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+        [responseObject writeToFile:@"/Users/laichunhui/Desktop/plist调试/65.plist" atomically:YES];
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
+    }];
 }
 
 - (void)viewDidLoad {
@@ -109,8 +123,10 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
+    KPClassify *classify = self.classifies[indexPath.row];
     KPDetailClassifyViewController *detailVc = [[KPDetailClassifyViewController alloc] init];
     
+    detailVc.classify = classify.name;
     [self.navigationController pushViewController:detailVc animated:YES];
 }
 

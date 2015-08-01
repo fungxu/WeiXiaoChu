@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class KPMenu;
 
 @interface KPDetailClassifyCell : UITableViewCell
+
+/** menu */
+@property (strong, nonatomic) KPMenu *menu;
 
 @end
