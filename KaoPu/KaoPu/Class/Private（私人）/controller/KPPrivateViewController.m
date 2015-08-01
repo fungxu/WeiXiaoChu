@@ -9,6 +9,7 @@
 #import "KPPrivateViewController.h"
 #import "KPToolViewController.h"
 #import "KPCustomWeek.h"
+#import "KPCustomTitleView.h"
 @interface KPPrivateViewController ()
 
 /** <#描述#> */
@@ -35,8 +36,6 @@
     return _toolVc;
 }
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -44,7 +43,10 @@
     [self setupNav];
     
     [self setContent];
+    
+    self.view.backgroundColor = KPColor(255, 251, 240);
 }
+
 #pragma mark - 1.设置Nav标题和按钮
 - (void)setupNav
 {
@@ -57,13 +59,12 @@
     titleLabel.height = 30;
     self.navigationItem.titleView = titleLabel;
     
-    self.view.backgroundColor = [UIColor redColor];
-    
     [self addChildViewController:self.toolVc];
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem RightItemWithTarget:self action:@selector(more) image:@"01-更多图标" highlightedimage:@"未标题-3_05"];
 }
 
+#pragma mark点击右边导航栏按钮
 - (void)more
 {
     [self.view addSubview:self.toolVc.view];
@@ -82,24 +83,33 @@
     }];
 }
 
+#pragma mark填充内容数据
 - (void)setContent{
     int count = 7;
-    CGFloat viewW = [UIScreen mainScreen].bounds.size.width;
-    CGFloat viewH = 84.5;
-    CGFloat viewX = 0;
     
+    CGFloat titleH = 64;
+    CGFloat weekH = 84.5;
+    //初始化UIScrollView
     UIScrollView *sc = [[UIScrollView alloc] init];
     sc.frame = self.view.bounds;
     sc.contentInset = UIEdgeInsetsMake(0, 0, 64, 0);
-    sc.contentSize = CGSizeMake(self.view.width, viewH * count);
-    sc.backgroundColor = [UIColor blueColor];
+    sc.contentSize = CGSizeMake(self.view.width, weekH * count + titleH);
     [self.view addSubview:sc];
     
+    //初始化标题
+    KPCustomTitleView *titleView = [KPCustomTitleView titleView];
+    titleView.height = titleH;
+    titleView.width = [UIScreen mainScreen].bounds.size.width;
+    titleView.backgroundColor = [UIColor clearColor];
+    [sc addSubview:titleView];
+    
+    //初始化内容
+    CGFloat weekW = [UIScreen mainScreen].bounds.size.width;
+    CGFloat weekX = 0;
     for (int i = 0; i<count; i++) {
         KPCustomWeek *view = [[KPCustomWeek alloc] init];
         [view setTitle:self.weeks[i]];
-        view.backgroundColor = [UIColor redColor];
-        view.frame = CGRectMake(viewX, viewH *i, viewW, viewH);
+        view.frame = CGRectMake(weekX, weekH *i + titleH, weekW, weekH);
         [sc addSubview:view];
     }
     

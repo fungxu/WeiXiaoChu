@@ -13,6 +13,10 @@
 		5D462BFF1B6C863800B1685B /* KPCustomWeek.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D462BFA1B6C863800B1685B /* KPCustomWeek.m */; };
 		5D462C001B6C863800B1685B /* KPCustomWeekScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D462BFC1B6C863800B1685B /* KPCustomWeekScrollView.m */; };
 		5D462C011B6C863800B1685B /* KPCustomWeekTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D462BFE1B6C863800B1685B /* KPCustomWeekTitle.m */; };
+		5D462C071B6CA0B900B1685B /* KPCustomFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D462C061B6CA0B900B1685B /* KPCustomFood.m */; };
+		5D462C091B6CA0CC00B1685B /* KPCustomFood.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D462C081B6CA0CC00B1685B /* KPCustomFood.xib */; };
+		5D462C0B1B6CB5E000B1685B /* KPCustomTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D462C0A1B6CB5E000B1685B /* KPCustomTitleView.xib */; };
+		5D462C0E1B6CB5F300B1685B /* KPCustomTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D462C0D1B6CB5F300B1685B /* KPCustomTitleView.m */; };
 		A3437FF61B6764150072C064 /* KPShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3437FF41B6764150072C064 /* KPShowViewController.m */; };
 		A3437FF71B6764150072C064 /* KPShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3437FF51B6764150072C064 /* KPShowViewController.xib */; };
 		A3437FFB1B67725A0072C064 /* KPShowViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3437FF91B67725A0072C064 /* KPShowViewCell.m */; };
@@ -57,6 +61,12 @@
 		5D462BFC1B6C863800B1685B /* KPCustomWeekScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCustomWeekScrollView.m; sourceTree = "<group>"; };
 		5D462BFD1B6C863800B1685B /* KPCustomWeekTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPCustomWeekTitle.h; sourceTree = "<group>"; };
 		5D462BFE1B6C863800B1685B /* KPCustomWeekTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCustomWeekTitle.m; sourceTree = "<group>"; };
+		5D462C051B6CA0B900B1685B /* KPCustomFood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPCustomFood.h; sourceTree = "<group>"; };
+		5D462C061B6CA0B900B1685B /* KPCustomFood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCustomFood.m; sourceTree = "<group>"; };
+		5D462C081B6CA0CC00B1685B /* KPCustomFood.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPCustomFood.xib; sourceTree = "<group>"; };
+		5D462C0A1B6CB5E000B1685B /* KPCustomTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPCustomTitleView.xib; sourceTree = "<group>"; };
+		5D462C0C1B6CB5F300B1685B /* KPCustomTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPCustomTitleView.h; sourceTree = "<group>"; };
+		5D462C0D1B6CB5F300B1685B /* KPCustomTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCustomTitleView.m; sourceTree = "<group>"; };
 		894FFD012BBCE6213DD58165 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8FB81972E37184A6028FA072 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3437FF31B6764150072C064 /* KPShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPShowViewController.h; sourceTree = "<group>"; };
@@ -130,6 +140,12 @@
 				5D462BFC1B6C863800B1685B /* KPCustomWeekScrollView.m */,
 				5D462BFD1B6C863800B1685B /* KPCustomWeekTitle.h */,
 				5D462BFE1B6C863800B1685B /* KPCustomWeekTitle.m */,
+				5D462C051B6CA0B900B1685B /* KPCustomFood.h */,
+				5D462C061B6CA0B900B1685B /* KPCustomFood.m */,
+				5D462C081B6CA0CC00B1685B /* KPCustomFood.xib */,
+				5D462C0C1B6CB5F300B1685B /* KPCustomTitleView.h */,
+				5D462C0D1B6CB5F300B1685B /* KPCustomTitleView.m */,
+				5D462C0A1B6CB5E000B1685B /* KPCustomTitleView.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -504,6 +520,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3437FFC1B67725A0072C064 /* KPShowViewCell.xib in Resources */,
+				5D462C091B6CA0CC00B1685B /* KPCustomFood.xib in Resources */,
+				5D462C0B1B6CB5E000B1685B /* KPCustomTitleView.xib in Resources */,
 				A3437FF71B6764150072C064 /* KPShowViewController.xib in Resources */,
 				5D462BCD1B6C845700B1685B /* KPToolViewController.xib in Resources */,
 				A3A6FABF1B662FEB00951CF0 /* Images.xcassets in Resources */,
@@ -567,6 +585,7 @@
 				A3A6FB361B664F4200951CF0 /* KPRecommendViewController.m in Sources */,
 				A3A6FB3C1B664F5E00951CF0 /* KPPrivateViewController.m in Sources */,
 				A3437FFB1B67725A0072C064 /* KPShowViewCell.m in Sources */,
+				5D462C0E1B6CB5F300B1685B /* KPCustomTitleView.m in Sources */,
 				A3437FFF1B67741C0072C064 /* KPDish.m in Sources */,
 				5D462C011B6C863800B1685B /* KPCustomWeekTitle.m in Sources */,
 				A3A6FB3F1B664F6800951CF0 /* KPMineViewController.m in Sources */,
@@ -574,6 +593,7 @@
 				A35FAE561B677A3D00321B82 /* KPClassify.m in Sources */,
 				5D462C001B6C863800B1685B /* KPCustomWeekScrollView.m in Sources */,
 				5D462BCE1B6C845700B1685B /* KPToolViewController.m in Sources */,
+				5D462C071B6CA0B900B1685B /* KPCustomFood.m in Sources */,
 				A3A6FB241B664A4700951CF0 /* AppDelegate.m in Sources */,
 				5D462BFF1B6C863800B1685B /* KPCustomWeek.m in Sources */,
 				A3437FF61B6764150072C064 /* KPShowViewController.m in Sources */,
