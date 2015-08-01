@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KPCustomFood">
+            <rect key="frame" x="0.0" y="0.0" width="228" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2aK-vm-wVz">
+                    <rect key="frame" x="0.0" y="0.0" width="228" height="96"/>
+                </imageView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IS-zq-4cc">
+                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="0QA-dK-gTi"/>
+                        <constraint firstAttribute="width" constant="30" id="Ycc-P8-Lof"/>
+                    </constraints>
+                    <state key="normal" image="04-小图标_垃圾桶">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="delfood:" destination="iN0-l3-epB" eventType="touchUpInside" id="Xbq-rM-f7j"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5IS-zq-4cc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2Lj-3v-tNm"/>
+                <constraint firstItem="2aK-vm-wVz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vnf-aq-tlv"/>
+                <constraint firstItem="2aK-vm-wVz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cF3-M3-ouD"/>
+                <constraint firstAttribute="bottom" secondItem="2aK-vm-wVz" secondAttribute="bottom" id="kW7-VJ-bKQ"/>
+                <constraint firstAttribute="trailing" secondItem="2aK-vm-wVz" secondAttribute="trailing" id="n13-f1-Rl0"/>
+                <constraint firstItem="5IS-zq-4cc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pCO-Zw-Yhu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="delbtn" destination="5IS-zq-4cc" id="tsh-K1-ROg"/>
+                <outlet property="imageView" destination="2aK-vm-wVz" id="mzS-s4-liq"/>
+            </connections>
+            <point key="canvasLocation" x="342" y="193"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="04-小图标_垃圾桶" width="60" height="60"/>
+    </resources>
+</document>
