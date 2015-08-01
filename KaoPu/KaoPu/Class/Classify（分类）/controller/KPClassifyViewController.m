@@ -10,6 +10,7 @@
 #import "KPClassify.h"
 #import "KPClassifyViewCell.h"
 #import "MJExtension.h"
+#import "KPDetailClassifyViewController.h"
 
 @interface KPClassifyViewController ()
 
@@ -26,12 +27,12 @@
     //流水布局对象
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     //设置item尺寸
-   layout.itemSize = CGSizeMake(100, 120);
+    layout.itemSize = CGSizeMake(100, 120);
     //设置每个item之间的间距
     //layout.minimumInteritemSpacing = 0;
     //设置行距
     layout.minimumLineSpacing = 10;
- 
+    
     return [super initWithCollectionViewLayout:layout];
 }
 
@@ -53,7 +54,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
+    
     // 1.设置Nav标题和按钮
     [self setupNav];
     
@@ -62,12 +63,12 @@ static NSString * const reuseIdentifier = @"Cell";
     
     self.collectionView.bounces = NO;
     self.collectionView.showsVerticalScrollIndicator = NO;
-
-   
+    
+    
     //注册cell
     [self.collectionView registerNib:[UINib nibWithNibName:@"KPClassifyViewCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
-     
-     
+    
+    
 }
 
 #pragma mark - 1.设置Nav标题和按钮
@@ -84,7 +85,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 
 
-#pragma mark - datasource method
+#pragma mark - datasource method and delegate
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return 1;
@@ -106,7 +107,12 @@ static NSString * const reuseIdentifier = @"Cell";
     return cell;
 }
 
-
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    KPDetailClassifyViewController *detailVc = [[KPDetailClassifyViewController alloc] init];
+    
+    [self.navigationController pushViewController:detailVc animated:YES];
+}
 
 
 - (void)back
