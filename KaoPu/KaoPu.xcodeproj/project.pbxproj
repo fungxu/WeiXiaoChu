@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CFE9A891B6CB93F005F09E4 /* KPDetailClassifyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFE9A871B6CB93F005F09E4 /* KPDetailClassifyCell.m */; };
-		1CFE9A8A1B6CB93F005F09E4 /* KPDetailClassifyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CFE9A881B6CB93F005F09E4 /* KPDetailClassifyCell.xib */; };
-		1CFE9A8E1B6CB970005F09E4 /* KPDetailClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFE9A8C1B6CB970005F09E4 /* KPDetailClassifyViewController.m */; };
-		1CFE9A911B6CBA3D005F09E4 /* classifies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CFE9A901B6CBA3D005F09E4 /* classifies.plist */; };
-		1CFE9A941B6CC786005F09E4 /* KPMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFE9A931B6CC786005F09E4 /* KPMenu.m */; };
 		33F98C551E1A007C785ED64C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB81972E37184A6028FA072 /* libPods.a */; };
 		5D462BCD1B6C845700B1685B /* KPToolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D462BCB1B6C845700B1685B /* KPToolViewController.xib */; };
 		5D462BCE1B6C845700B1685B /* KPToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D462BCC1B6C845700B1685B /* KPToolViewController.m */; };
@@ -56,14 +51,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1CFE9A861B6CB93F005F09E4 /* KPDetailClassifyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KPDetailClassifyCell.h; path = "KaoPu/Class/Classify（分类）/View/KPDetailClassifyCell.h"; sourceTree = SOURCE_ROOT; };
-		1CFE9A871B6CB93F005F09E4 /* KPDetailClassifyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KPDetailClassifyCell.m; path = "KaoPu/Class/Classify（分类）/View/KPDetailClassifyCell.m"; sourceTree = SOURCE_ROOT; };
-		1CFE9A881B6CB93F005F09E4 /* KPDetailClassifyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KPDetailClassifyCell.xib; path = "KaoPu/Class/Classify（分类）/View/KPDetailClassifyCell.xib"; sourceTree = SOURCE_ROOT; };
-		1CFE9A8B1B6CB970005F09E4 /* KPDetailClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPDetailClassifyViewController.h; sourceTree = "<group>"; };
-		1CFE9A8C1B6CB970005F09E4 /* KPDetailClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDetailClassifyViewController.m; sourceTree = "<group>"; };
-		1CFE9A901B6CBA3D005F09E4 /* classifies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = classifies.plist; sourceTree = "<group>"; };
-		1CFE9A921B6CC786005F09E4 /* KPMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KPMenu.h; path = "KaoPu/Class/Classify（分类）/Model/KPMenu.h"; sourceTree = SOURCE_ROOT; };
-		1CFE9A931B6CC786005F09E4 /* KPMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KPMenu.m; path = "KaoPu/Class/Classify（分类）/Model/KPMenu.m"; sourceTree = SOURCE_ROOT; };
 		594A566172F14F36271247F9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5D462BCA1B6C845700B1685B /* KPToolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPToolViewController.h; sourceTree = "<group>"; };
 		5D462BCB1B6C845700B1685B /* KPToolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPToolViewController.xib; sourceTree = "<group>"; };
@@ -177,8 +164,6 @@
 			children = (
 				A35FAE501B677A3D00321B82 /* KPClassify.h */,
 				A35FAE511B677A3D00321B82 /* KPClassify.m */,
-				1CFE9A921B6CC786005F09E4 /* KPMenu.h */,
-				1CFE9A931B6CC786005F09E4 /* KPMenu.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -189,9 +174,6 @@
 				A35FAE531B677A3D00321B82 /* KPClassifyViewCell.h */,
 				A35FAE541B677A3D00321B82 /* KPClassifyViewCell.m */,
 				A35FAE551B677A3D00321B82 /* KPClassifyViewCell.xib */,
-				1CFE9A861B6CB93F005F09E4 /* KPDetailClassifyCell.h */,
-				1CFE9A871B6CB93F005F09E4 /* KPDetailClassifyCell.m */,
-				1CFE9A881B6CB93F005F09E4 /* KPDetailClassifyCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -229,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				A3A6FABE1B662FEB00951CF0 /* Images.xcassets */,
-				1CFE9A901B6CBA3D005F09E4 /* classifies.plist */,
 				A3A6FAB21B662FEB00951CF0 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -279,8 +260,6 @@
 			children = (
 				A3A6FB371B664F5000951CF0 /* KPClassifyViewController.h */,
 				A3A6FB381B664F5000951CF0 /* KPClassifyViewController.m */,
-				1CFE9A8B1B6CB970005F09E4 /* KPDetailClassifyViewController.h */,
-				1CFE9A8C1B6CB970005F09E4 /* KPDetailClassifyViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -541,16 +520,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3437FFC1B67725A0072C064 /* KPShowViewCell.xib in Resources */,
-<<<<<<< HEAD
-				1CFE9A8A1B6CB93F005F09E4 /* KPDetailClassifyCell.xib in Resources */,
-				A3437FF71B6764150072C064 /* KPShowViewController.xib in Resources */,
-				1CFE9A911B6CBA3D005F09E4 /* classifies.plist in Resources */,
-=======
 				5D462C091B6CA0CC00B1685B /* KPCustomFood.xib in Resources */,
 				5D462C0B1B6CB5E000B1685B /* KPCustomTitleView.xib in Resources */,
 				A3437FF71B6764150072C064 /* KPShowViewController.xib in Resources */,
 				5D462BCD1B6C845700B1685B /* KPToolViewController.xib in Resources */,
->>>>>>> origin/master
 				A3A6FABF1B662FEB00951CF0 /* Images.xcassets in Resources */,
 				A35FAE581B677A3D00321B82 /* KPClassifyViewCell.xib in Resources */,
 			);
@@ -607,7 +580,6 @@
 				A3A6FB261B664B5E00951CF0 /* main.m in Sources */,
 				A3A6FB2D1B664CF000951CF0 /* UIView+KPExtension.m in Sources */,
 				A35FAE571B677A3D00321B82 /* KPClassifyViewCell.m in Sources */,
-				1CFE9A941B6CC786005F09E4 /* KPMenu.m in Sources */,
 				A3A6FB331B664DE700951CF0 /* KPNavigationViewController.m in Sources */,
 				A34380051B6775F40072C064 /* KPDishStep.m in Sources */,
 				A3A6FB361B664F4200951CF0 /* KPRecommendViewController.m in Sources */,
@@ -615,11 +587,7 @@
 				A3437FFB1B67725A0072C064 /* KPShowViewCell.m in Sources */,
 				5D462C0E1B6CB5F300B1685B /* KPCustomTitleView.m in Sources */,
 				A3437FFF1B67741C0072C064 /* KPDish.m in Sources */,
-<<<<<<< HEAD
-				1CFE9A8E1B6CB970005F09E4 /* KPDetailClassifyViewController.m in Sources */,
-=======
 				5D462C011B6C863800B1685B /* KPCustomWeekTitle.m in Sources */,
->>>>>>> origin/master
 				A3A6FB3F1B664F6800951CF0 /* KPMineViewController.m in Sources */,
 				A3A6FB391B664F5000951CF0 /* KPClassifyViewController.m in Sources */,
 				A35FAE561B677A3D00321B82 /* KPClassify.m in Sources */,
@@ -627,11 +595,7 @@
 				5D462BCE1B6C845700B1685B /* KPToolViewController.m in Sources */,
 				5D462C071B6CA0B900B1685B /* KPCustomFood.m in Sources */,
 				A3A6FB241B664A4700951CF0 /* AppDelegate.m in Sources */,
-<<<<<<< HEAD
-				1CFE9A891B6CB93F005F09E4 /* KPDetailClassifyCell.m in Sources */,
-=======
 				5D462BFF1B6C863800B1685B /* KPCustomWeek.m in Sources */,
->>>>>>> origin/master
 				A3437FF61B6764150072C064 /* KPShowViewController.m in Sources */,
 				A3A6FB2A1B664CD100951CF0 /* UIBarButtonItem+KPExtension.m in Sources */,
 			);
