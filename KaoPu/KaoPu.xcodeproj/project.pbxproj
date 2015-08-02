@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0B168E1B6DD6FE00763E72 /* KPClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0B167F1B6DD6FE00763E72 /* KPClassifyViewController.m */; };
+		1C0B168F1B6DD6FE00763E72 /* KPDetailClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0B16811B6DD6FE00763E72 /* KPDetailClassifyViewController.m */; };
+		1C0B16901B6DD6FE00763E72 /* KPClassify.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0B16841B6DD6FE00763E72 /* KPClassify.m */; };
+		1C0B16911B6DD6FE00763E72 /* KPMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0B16861B6DD6FE00763E72 /* KPMenu.m */; };
+		1C0B16921B6DD6FE00763E72 /* KPClassifyViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0B16891B6DD6FE00763E72 /* KPClassifyViewCell.m */; };
+		1C0B16931B6DD6FE00763E72 /* KPClassifyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C0B168A1B6DD6FE00763E72 /* KPClassifyViewCell.xib */; };
+		1C0B16941B6DD6FE00763E72 /* KPDetailClassifyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C0B168C1B6DD6FE00763E72 /* KPDetailClassifyCell.m */; };
+		1C0B16951B6DD6FE00763E72 /* KPDetailClassifyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C0B168D1B6DD6FE00763E72 /* KPDetailClassifyCell.xib */; };
 		33F98C551E1A007C785ED64C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB81972E37184A6028FA072 /* libPods.a */; };
 		5D462BCD1B6C845700B1685B /* KPToolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D462BCB1B6C845700B1685B /* KPToolViewController.xib */; };
 		5D462BCE1B6C845700B1685B /* KPToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D462BCC1B6C845700B1685B /* KPToolViewController.m */; };
@@ -23,9 +31,6 @@
 		A3437FFC1B67725A0072C064 /* KPShowViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3437FFA1B67725A0072C064 /* KPShowViewCell.xib */; };
 		A3437FFF1B67741C0072C064 /* KPDish.m in Sources */ = {isa = PBXBuildFile; fileRef = A3437FFE1B67741C0072C064 /* KPDish.m */; };
 		A34380051B6775F40072C064 /* KPDishStep.m in Sources */ = {isa = PBXBuildFile; fileRef = A34380041B6775F40072C064 /* KPDishStep.m */; };
-		A35FAE561B677A3D00321B82 /* KPClassify.m in Sources */ = {isa = PBXBuildFile; fileRef = A35FAE511B677A3D00321B82 /* KPClassify.m */; };
-		A35FAE571B677A3D00321B82 /* KPClassifyViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A35FAE541B677A3D00321B82 /* KPClassifyViewCell.m */; };
-		A35FAE581B677A3D00321B82 /* KPClassifyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A35FAE551B677A3D00321B82 /* KPClassifyViewCell.xib */; };
 		A3A6FABF1B662FEB00951CF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A6FABE1B662FEB00951CF0 /* Images.xcassets */; };
 		A3A6FACE1B662FEB00951CF0 /* KaoPuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FACD1B662FEB00951CF0 /* KaoPuTests.m */; };
 		A3A6FB241B664A4700951CF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB151B664A4700951CF0 /* AppDelegate.m */; };
@@ -35,7 +40,6 @@
 		A3A6FB301B664DCC00951CF0 /* KPTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB2F1B664DCC00951CF0 /* KPTabBarViewController.m */; };
 		A3A6FB331B664DE700951CF0 /* KPNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB321B664DE700951CF0 /* KPNavigationViewController.m */; };
 		A3A6FB361B664F4200951CF0 /* KPRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB351B664F4200951CF0 /* KPRecommendViewController.m */; };
-		A3A6FB391B664F5000951CF0 /* KPClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB381B664F5000951CF0 /* KPClassifyViewController.m */; };
 		A3A6FB3C1B664F5E00951CF0 /* KPPrivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB3B1B664F5E00951CF0 /* KPPrivateViewController.m */; };
 		A3A6FB3F1B664F6800951CF0 /* KPMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A6FB3E1B664F6800951CF0 /* KPMineViewController.m */; };
 /* End PBXBuildFile section */
@@ -51,6 +55,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C0B167E1B6DD6FE00763E72 /* KPClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPClassifyViewController.h; sourceTree = "<group>"; };
+		1C0B167F1B6DD6FE00763E72 /* KPClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPClassifyViewController.m; sourceTree = "<group>"; };
+		1C0B16801B6DD6FE00763E72 /* KPDetailClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPDetailClassifyViewController.h; sourceTree = "<group>"; };
+		1C0B16811B6DD6FE00763E72 /* KPDetailClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDetailClassifyViewController.m; sourceTree = "<group>"; };
+		1C0B16831B6DD6FE00763E72 /* KPClassify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPClassify.h; sourceTree = "<group>"; };
+		1C0B16841B6DD6FE00763E72 /* KPClassify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPClassify.m; sourceTree = "<group>"; };
+		1C0B16851B6DD6FE00763E72 /* KPMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPMenu.h; sourceTree = "<group>"; };
+		1C0B16861B6DD6FE00763E72 /* KPMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPMenu.m; sourceTree = "<group>"; };
+		1C0B16881B6DD6FE00763E72 /* KPClassifyViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPClassifyViewCell.h; sourceTree = "<group>"; };
+		1C0B16891B6DD6FE00763E72 /* KPClassifyViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPClassifyViewCell.m; sourceTree = "<group>"; };
+		1C0B168A1B6DD6FE00763E72 /* KPClassifyViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPClassifyViewCell.xib; sourceTree = "<group>"; };
+		1C0B168B1B6DD6FE00763E72 /* KPDetailClassifyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPDetailClassifyCell.h; sourceTree = "<group>"; };
+		1C0B168C1B6DD6FE00763E72 /* KPDetailClassifyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDetailClassifyCell.m; sourceTree = "<group>"; };
+		1C0B168D1B6DD6FE00763E72 /* KPDetailClassifyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPDetailClassifyCell.xib; sourceTree = "<group>"; };
 		594A566172F14F36271247F9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5D462BCA1B6C845700B1685B /* KPToolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPToolViewController.h; sourceTree = "<group>"; };
 		5D462BCB1B6C845700B1685B /* KPToolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPToolViewController.xib; sourceTree = "<group>"; };
@@ -79,11 +97,6 @@
 		A3437FFE1B67741C0072C064 /* KPDish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDish.m; sourceTree = "<group>"; };
 		A34380031B6775F40072C064 /* KPDishStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPDishStep.h; sourceTree = "<group>"; };
 		A34380041B6775F40072C064 /* KPDishStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPDishStep.m; sourceTree = "<group>"; };
-		A35FAE501B677A3D00321B82 /* KPClassify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPClassify.h; sourceTree = "<group>"; };
-		A35FAE511B677A3D00321B82 /* KPClassify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPClassify.m; sourceTree = "<group>"; };
-		A35FAE531B677A3D00321B82 /* KPClassifyViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPClassifyViewCell.h; sourceTree = "<group>"; };
-		A35FAE541B677A3D00321B82 /* KPClassifyViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPClassifyViewCell.m; sourceTree = "<group>"; };
-		A35FAE551B677A3D00321B82 /* KPClassifyViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KPClassifyViewCell.xib; sourceTree = "<group>"; };
 		A3A6FAAE1B662FEB00951CF0 /* KaoPu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaoPu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A6FAB21B662FEB00951CF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3A6FABE1B662FEB00951CF0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -104,8 +117,6 @@
 		A3A6FB321B664DE700951CF0 /* KPNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPNavigationViewController.m; sourceTree = "<group>"; };
 		A3A6FB341B664F4200951CF0 /* KPRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPRecommendViewController.h; sourceTree = "<group>"; };
 		A3A6FB351B664F4200951CF0 /* KPRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPRecommendViewController.m; sourceTree = "<group>"; };
-		A3A6FB371B664F5000951CF0 /* KPClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPClassifyViewController.h; sourceTree = "<group>"; };
-		A3A6FB381B664F5000951CF0 /* KPClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPClassifyViewController.m; sourceTree = "<group>"; };
 		A3A6FB3A1B664F5E00951CF0 /* KPPrivateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPPrivateViewController.h; sourceTree = "<group>"; };
 		A3A6FB3B1B664F5E00951CF0 /* KPPrivateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPPrivateViewController.m; sourceTree = "<group>"; };
 		A3A6FB3D1B664F6800951CF0 /* KPMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPMineViewController.h; sourceTree = "<group>"; };
@@ -131,6 +142,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C0B167C1B6DD6FE00763E72 /* Classify（分类） */ = {
+			isa = PBXGroup;
+			children = (
+				1C0B167D1B6DD6FE00763E72 /* controller */,
+				1C0B16821B6DD6FE00763E72 /* Model */,
+				1C0B16871B6DD6FE00763E72 /* View */,
+			);
+			path = "Classify（分类）";
+			sourceTree = "<group>";
+		};
+		1C0B167D1B6DD6FE00763E72 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1C0B167E1B6DD6FE00763E72 /* KPClassifyViewController.h */,
+				1C0B167F1B6DD6FE00763E72 /* KPClassifyViewController.m */,
+				1C0B16801B6DD6FE00763E72 /* KPDetailClassifyViewController.h */,
+				1C0B16811B6DD6FE00763E72 /* KPDetailClassifyViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		1C0B16821B6DD6FE00763E72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C0B16831B6DD6FE00763E72 /* KPClassify.h */,
+				1C0B16841B6DD6FE00763E72 /* KPClassify.m */,
+				1C0B16851B6DD6FE00763E72 /* KPMenu.h */,
+				1C0B16861B6DD6FE00763E72 /* KPMenu.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C0B16871B6DD6FE00763E72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C0B16881B6DD6FE00763E72 /* KPClassifyViewCell.h */,
+				1C0B16891B6DD6FE00763E72 /* KPClassifyViewCell.m */,
+				1C0B168A1B6DD6FE00763E72 /* KPClassifyViewCell.xib */,
+				1C0B168B1B6DD6FE00763E72 /* KPDetailClassifyCell.h */,
+				1C0B168C1B6DD6FE00763E72 /* KPDetailClassifyCell.m */,
+				1C0B168D1B6DD6FE00763E72 /* KPDetailClassifyCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5D462BF81B6C863800B1685B /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,25 +213,6 @@
 				594A566172F14F36271247F9 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		A35FAE4F1B677A3D00321B82 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				A35FAE501B677A3D00321B82 /* KPClassify.h */,
-				A35FAE511B677A3D00321B82 /* KPClassify.m */,
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		A35FAE521B677A3D00321B82 /* view */ = {
-			isa = PBXGroup;
-			children = (
-				A35FAE531B677A3D00321B82 /* KPClassifyViewCell.h */,
-				A35FAE541B677A3D00321B82 /* KPClassifyViewCell.m */,
-				A35FAE551B677A3D00321B82 /* KPClassifyViewCell.xib */,
-			);
-			path = view;
 			sourceTree = "<group>";
 		};
 		A3A6FAA51B662FEB00951CF0 = {
@@ -236,32 +273,13 @@
 		A3A6FB091B664A4700951CF0 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				1C0B167C1B6DD6FE00763E72 /* Classify（分类） */,
 				A3A6FB0E1B664A4700951CF0 /* Main（主要） */,
 				A3A6FB1F1B664A4700951CF0 /* Recommend（推荐） */,
-				A3A6FB0A1B664A4700951CF0 /* Classify（分类） */,
 				A3A6FB1B1B664A4700951CF0 /* Private（私人） */,
 				A3A6FB171B664A4700951CF0 /* Mine（我） */,
 			);
 			path = Class;
-			sourceTree = "<group>";
-		};
-		A3A6FB0A1B664A4700951CF0 /* Classify（分类） */ = {
-			isa = PBXGroup;
-			children = (
-				A35FAE4F1B677A3D00321B82 /* model */,
-				A35FAE521B677A3D00321B82 /* view */,
-				A3A6FB0B1B664A4700951CF0 /* controller */,
-			);
-			path = "Classify（分类）";
-			sourceTree = "<group>";
-		};
-		A3A6FB0B1B664A4700951CF0 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				A3A6FB371B664F5000951CF0 /* KPClassifyViewController.h */,
-				A3A6FB381B664F5000951CF0 /* KPClassifyViewController.m */,
-			);
-			path = controller;
 			sourceTree = "<group>";
 		};
 		A3A6FB0E1B664A4700951CF0 /* Main（主要） */ = {
@@ -521,11 +539,12 @@
 			files = (
 				A3437FFC1B67725A0072C064 /* KPShowViewCell.xib in Resources */,
 				5D462C091B6CA0CC00B1685B /* KPCustomFood.xib in Resources */,
+				1C0B16931B6DD6FE00763E72 /* KPClassifyViewCell.xib in Resources */,
 				5D462C0B1B6CB5E000B1685B /* KPCustomTitleView.xib in Resources */,
 				A3437FF71B6764150072C064 /* KPShowViewController.xib in Resources */,
+				1C0B16951B6DD6FE00763E72 /* KPDetailClassifyCell.xib in Resources */,
 				5D462BCD1B6C845700B1685B /* KPToolViewController.xib in Resources */,
 				A3A6FABF1B662FEB00951CF0 /* Images.xcassets in Resources */,
-				A35FAE581B677A3D00321B82 /* KPClassifyViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,9 +596,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A6FB301B664DCC00951CF0 /* KPTabBarViewController.m in Sources */,
+				1C0B168E1B6DD6FE00763E72 /* KPClassifyViewController.m in Sources */,
 				A3A6FB261B664B5E00951CF0 /* main.m in Sources */,
 				A3A6FB2D1B664CF000951CF0 /* UIView+KPExtension.m in Sources */,
-				A35FAE571B677A3D00321B82 /* KPClassifyViewCell.m in Sources */,
 				A3A6FB331B664DE700951CF0 /* KPNavigationViewController.m in Sources */,
 				A34380051B6775F40072C064 /* KPDishStep.m in Sources */,
 				A3A6FB361B664F4200951CF0 /* KPRecommendViewController.m in Sources */,
@@ -589,14 +608,17 @@
 				A3437FFF1B67741C0072C064 /* KPDish.m in Sources */,
 				5D462C011B6C863800B1685B /* KPCustomWeekTitle.m in Sources */,
 				A3A6FB3F1B664F6800951CF0 /* KPMineViewController.m in Sources */,
-				A3A6FB391B664F5000951CF0 /* KPClassifyViewController.m in Sources */,
-				A35FAE561B677A3D00321B82 /* KPClassify.m in Sources */,
+				1C0B16941B6DD6FE00763E72 /* KPDetailClassifyCell.m in Sources */,
 				5D462C001B6C863800B1685B /* KPCustomWeekScrollView.m in Sources */,
+				1C0B16911B6DD6FE00763E72 /* KPMenu.m in Sources */,
 				5D462BCE1B6C845700B1685B /* KPToolViewController.m in Sources */,
 				5D462C071B6CA0B900B1685B /* KPCustomFood.m in Sources */,
 				A3A6FB241B664A4700951CF0 /* AppDelegate.m in Sources */,
 				5D462BFF1B6C863800B1685B /* KPCustomWeek.m in Sources */,
+				1C0B16921B6DD6FE00763E72 /* KPClassifyViewCell.m in Sources */,
+				1C0B16901B6DD6FE00763E72 /* KPClassify.m in Sources */,
 				A3437FF61B6764150072C064 /* KPShowViewController.m in Sources */,
+				1C0B168F1B6DD6FE00763E72 /* KPDetailClassifyViewController.m in Sources */,
 				A3A6FB2A1B664CD100951CF0 /* UIBarButtonItem+KPExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
